@@ -81,8 +81,7 @@ Un informe de incidente de Spotify de 2022 confirmó públicamente el uso de **g
 
 ### **7. Diagrama Arquitectónico**
 
-![OpenWebDocs Logo: Carle el ratón de biblioteca](carle.png)
-<img alt="Arquitectura de Spotify" src="carle.png" />
+![Arquitectura de Spotify](ArquitecturadeSpotify.png)
 
 ---
 
