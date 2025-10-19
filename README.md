@@ -49,9 +49,9 @@ El *back-end* de Spotify está compuesto por miles de microservicios que utiliza
 
 Spotify no depende de una única base de datos; utiliza diferentes sistemas según las necesidades del servicio:
 
-* **Apache Cassandra (NoSQL - Columna Ancha):** Es una de sus bases de datos más críticas. Se utiliza para almacenar datos masivos que requieren una disponibilidad global y altas tasas de escritura, como los **metadatos de las canciones**, las **listas de reproducción (*playlists*)** de los usuarios y el historial de reproducción. Se eligió por su escalabilidad horizontal y tolerancia a fallos (Planet Cassandra, s.f.).
+* **Apache Cassandra (NoSQL - Columna Ancha):** Es una de sus bases de datos más críticas. Se utiliza para almacenar datos masivos que requieren una disponibilidad global y altas tasas de escritura, como los **metadatos de las canciones**, las **listas de reproducción (*playlists*)** de los usuarios y el historial de reproducción. Se eligió por su escalabilidad horizontal y tolerancia a fallos.
 * **PostgreSQL (Relacional):** Utilizada para datos que requieren transacciones ACID (Atomicidad, Consistencia, Aislamiento, Durabilidad) y fuerte consistencia. Ejemplos incluyen datos de usuarios (cuentas, suscripciones) e información financiera y de pagos.
-* **Apache Kafka (Plataforma de Event Streaming):** Aunque no es una base de datos tradicional, es fundamental. Kafka actúa como la columna vertebral para la comunicación asíncrona y el procesamiento de eventos en tiempo real. Cada acción del usuario (como "reproducir canción" o "saltar canción") se publica como un evento en Kafka, permitiendo que múltiples servicios (como el sistema de recomendaciones o el de pago de regalías) reaccionen a ese evento (Spotify Engineering, 2016).
+* **Apache Kafka (Plataforma de Event Streaming):** Aunque no es una base de datos tradicional, es fundamental. Kafka actúa como la columna vertebral para la comunicación asíncrona y el procesamiento de eventos en tiempo real. Cada acción del usuario (como "reproducir canción" o "saltar canción") se publica como un evento en Kafka, permitiendo que múltiples servicios (como el sistema de recomendaciones o el de pago de regalías) reaccionen a ese evento.
 * **Redis (En Memoria):** Se utiliza como una capa de *caching* de alta velocidad para reducir la latencia y la carga en las bases de datos principales, almacenando datos consultados frecuentemente.
 
 ---
@@ -60,7 +60,7 @@ Spotify no depende de una única base de datos; utiliza diferentes sistemas seg�
 
 La comunicación entre los miles de microservicios internos y los clientes externos se gestiona con diferentes protocolos:
 
-* **gRPC:** Es el estándar principal para la comunicación **síncrona interna** (servicio-a-servicio). Spotify migró de su propio protocolo a gRPC porque es mucho más rápido y eficiente que REST, ya que utiliza *Protocol Buffers* (Protobuf) para serializar datos y opera sobre HTTP/2 (Charla Jfokus, 2019).
+* **gRPC:** Es el estándar principal para la comunicación **síncrona interna** (servicio-a-servicio). Spotify migró de su propio protocolo a gRPC porque es mucho más rápido y eficiente que REST, ya que utiliza *Protocol Buffers* (Protobuf) para serializar datos y opera sobre HTTP/2.
 * **Kafka:** Como se mencionó anteriormente, es la solución principal para la comunicación **asíncrona** y desacoplada mediante un modelo de publicador-suscriptor.
 * **REST (APIs):** Se utiliza principalmente para las **APIs públicas** (la API web de Spotify para desarrolladores externos) y para la comunicación con los clientes *front-end*.
 
@@ -70,7 +70,7 @@ Un informe de incidente de Spotify de 2022 confirmó públicamente el uso de **g
 
 ### **6. Infraestructura y Despliegue**
 
-* **Plataforma de Nube:** Spotify opera casi en su totalidad en **Google Cloud Platform (GCP)**. Realizaron una migración masiva desde sus propios centros de datos (data centers) a GCP para aprovechar su escalabilidad y servicios gestionados (Google Cloud, s.f.).
+* **Plataforma de Nube:** Spotify opera casi en su totalidad en **Google Cloud Platform (GCP)**. Realizaron una migración masiva desde sus propios centros de datos (data centers) a GCP para aprovechar su escalabilidad y servicios gestionados.
 * **Contenedores y Orquestación:** Sí, Spotify es un usuario masivo de **Docker** (para empaquetar sus microservicios en contenedores) y **Kubernetes** (para orquestar, desplegar y escalar esos contenedores automáticamente). Utilizan **GKE (Google Kubernetes Engine)**, el servicio gestionado de Kubernetes en GCP.
 * **Contribución:**
     * **GCP** proporciona la infraestructura global escalable bajo demanda.
