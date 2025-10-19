@@ -124,15 +124,6 @@ La arquitectura de Spotify es un sistema de microservicios altamente distribuido
 * **Google Cloud. (s.f.). *Spotify: Why the world’s largest music streaming service moved to Google Cloud*.**
     * Enlace: `https://cloud.google.com/customers/spotify`
 
-* **InfoQ. (2018). *Culture, Part 1: How Spotify Builds Products*.**
-    * Enlace: `https://www.infoq.com/articles/spotify-culture-part-1/`
-
-* **Intuji. (2023). *How Does Spotify Work? Spotify Tech Stack Explored*.**
-    * Enlace: `https://intuji.com/how-does-spotify-work-tech-stack-explored/`
-
-* **Planet Cassandra. (s.f.). *Spotify*. [Caso de estudio].**
-    * Enlace: `https://planetcassandra.org/usecases/spotify/`
-
 * **Reddit. (2021). *We're the engineers rethinking Kubernetes at Spotify. Ask us anything!***
     * Enlace: `https://www.reddit.com/r/kubernetes/comments/lwb31v/were_the_engineers_rethinking_kubernetes_at/`
 
@@ -140,6 +131,7 @@ La arquitectura de Spotify es un sistema de microservicios altamente distribuido
     * Enlace: `https://www.youtube.com/watch?v=CbNimCiMqe8`
 
 #### **Artículos Clave del Blog de Ingeniería de Spotify (Fuente Primaria)**
+    * Enlace: `https://engineering.atspotify.com/`
 
 *(Puedes encontrar estos artículos buscando su título exacto en Google, ya que son publicaciones oficiales de los ingenieros de Spotify).*
 
