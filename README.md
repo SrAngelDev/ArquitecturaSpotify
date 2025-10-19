@@ -115,25 +115,19 @@ La arquitectura de Spotify es un sistema de microservicios altamente distribuido
 
 ### **Referencias (Fuentes Verificables)**
 
-* **BairesDev. (2023). *How Spotify Engineered a Tech Stack that Streams Music to Millions*.**
-    * Enlace: `https://www.bairesdev.com/blog/spotify-engineering/`
+* [**BairesDev. (2023). *How Spotify Engineered a Tech Stack that Streams Music to Millions*.**](https://www.bairesdev.com/blog/spotify-engineering/)
 
-* **Design Gurus. (2024). *What coding language is Spotify?***
-    * Enlace: `https://www.designgurus.io/answers/detail/what-coding-language-is-spotify`
+* [**Design Gurus. (2024). *What coding language is Spotify?***](https://www.designgurus.io/answers/detail/what-coding-language-is-spotify)
 
-* **Google Cloud. (s.f.). *Spotify: Why the world’s largest music streaming service moved to Google Cloud*.**
-    * Enlace: `https://cloud.google.com/customers/spotify`
+* [**Google Cloud. (s.f.). *Spotify: Why the world’s largest music streaming service moved to Google Cloud*.**](https://cloud.google.com/customers/spotify)
 
-* **Reddit. (2021). *We're the engineers rethinking Kubernetes at Spotify. Ask us anything!***
-    * Enlace: `https://www.reddit.com/r/kubernetes/comments/lwb31v/were_the_engineers_rethinking_kubernetes_at/`
+* [**Reddit. (2021). *We're the engineers rethinking Kubernetes at Spotify. Ask us anything!***](https://www.reddit.com/r/kubernetes/comments/lwb31v/were_the_engineers_rethinking_kubernetes_at/)
 
-* **YouTube. (2019). *Adopting gRPC at Spotify* [Charla en Jfokus 2019].**
-    * Enlace: `https://www.youtube.com/watch?v=CbNimCiMqe8`
+* [**YouTube. (2019). *Adopting gRPC at Spotify* [Charla en Jfokus 2019].**](https://www.youtube.com/watch?v=CbNimCiMqe8)
 
 #### **Artículos Clave del Blog de Ingeniería de Spotify (Fuente Primaria)**
-    * Enlace: `https://engineering.atspotify.com/`
-
-*(Puedes encontrar estos artículos buscando su título exacto en Google, ya que son publicaciones oficiales de los ingenieros de Spotify).*
+* [**Blog Oficial de Ingeniería de Spotify**](https://engineering.atspotify.com/)
+    *(Este es el enlace principal al blog. Desde aquí puedes buscar los títulos específicos mencionados en el proyecto, como "How we use Python at Spotify", "Kafka at Spotify", "Reimagining the Spotify Desktop App", e "Incident Report: Spotify Outage on March 8, 2022".)*
 
 * **Fuente:** Spotify Engineering Blog
     * **Título del Artículo:** "How we use Python at Spotify" (Publicado en 2013)
