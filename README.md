@@ -127,7 +127,7 @@ La arquitectura de Spotify es un sistema de microservicios altamente distribuido
 
 #### **Artículos Clave del Blog de Ingeniería de Spotify (Fuente Primaria)**
 * [**Blog Oficial de Ingeniería de Spotify**](https://engineering.atspotify.com/)
-    *(Este es el enlace principal al blog. Desde aquí puedes buscar los títulos específicos mencionados en el proyecto, como "How we use Python at Spotify", "Kafka at Spotify", "Reimagining the Spotify Desktop App", e "Incident Report: Spotify Outage on March 8, 2022".)*
+    *(Este es el enlace principal al blog. Desde aquí puedes buscar los títulos específicos mencionados en el proyecto, que te dejo aquí abajo ⬇️)*
 
 * **Fuente:** Spotify Engineering Blog
     * **Título del Artículo:** "How we use Python at Spotify" (Publicado en 2013)
