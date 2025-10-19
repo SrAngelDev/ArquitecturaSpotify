@@ -81,29 +81,8 @@ Un informe de incidente de Spotify de 2022 confirmó públicamente el uso de **g
 
 ### **7. Diagrama Arquitectónico**
 
-No existe un diagrama arquitectónico oficial y detallado de Spotify que sea público, ya que es información interna y propietaria. Sin embargo, basándonos en la investigación, podemos describir un **diagrama conceptual representativo** de su arquitectura.
-
-
-
-#### Explicación de los Componentes (Descripción del Diagrama)
-
-Un diagrama representativo mostraría los siguientes flujos y componentes:
-
-1.  **Clientes (Clients):** En la parte superior, estarían los clientes: **App Móvil (Nativa)**, **App Web (React)** y **App de Escritorio (CEF)**.
-2.  **CDN (Content Delivery Network):** Los clientes **no** descargan los archivos de audio (MP3/OGG) desde los servicios de Spotify. Cuando un usuario da "play", el cliente recibe la autorización del *back-end* y luego descarga la canción directamente desde una **CDN** (como Google CDN o Fastly). Esto garantiza una latencia de reproducción mínima, sirviendo el contenido desde un caché geográficamente cercano al usuario.
-3.  **API Gateway / BFF (Backend-for-Frontend):** Los clientes se comunican con el *back-end* a través de una capa de entrada (API Gateway). Esta capa gestiona la autenticación, el enrutamiento de peticiones (vía **REST** o gRPC) al microservicio correcto, y agrega respuestas de múltiples servicios.
-4.  **Red de Microservicios (en Google Kubernetes Engine):** El núcleo del diagrama. Sería una gran caja etiquetada como "GKE" que contiene miles de microservicios (contenedores Docker). Veríamos servicios como:
-    * `Servicio de Búsqueda`
-    * `Servicio de Playlists`
-    * `Servicio de Autenticación`
-    * `Servicio de Recomendaciones (ML)`
-5.  **Flujos de Comunicación Interna:**
-    * Flechas **gRPC** (comunicación síncrona) conectando los microservicios entre sí para peticiones directas (ej. Búsqueda consulta a Playlists).
-    * Un bus central de **Kafka** (comunicación asíncrona) donde los servicios publican eventos (ej. `Servicio de Reproducción` publica "canción\_finalizada") y otros servicios se suscriben a ellos (ej. `Servicio de Recomendaciones` consume ese evento).
-6.  **Capa de Persistencia (Bases de Datos):** En la parte inferior, se mostrarían las bases de datos, conectadas a los servicios que las utilizan:
-    * `Servicio de Playlists` -> Conectado a **Cassandra** (para escala masiva).
-    * `Servicio de Cuentas` -> Conectado a **PostgreSQL** (para datos transaccionales).
-    * Cualquier servicio que necesite velocidad -> Conectado a **Redis** (Caché).
+![OpenWebDocs Logo: Carle el ratón de biblioteca](carle.png)
+<img alt="Arquitectura de Spotify" src="carle.png" />
 
 ---
 
